@@ -1,0 +1,24 @@
+{
+  "name": "thoughtwork-testscripts",
+  "version": "1.0.0",
+  "description": "MarsAir Playwright test automation scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation"
+  ],
+  "author": "HoangPham",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}

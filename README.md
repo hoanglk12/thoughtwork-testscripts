@@ -111,4 +111,5 @@ The `PromoCodeGenerator` class generates valid/invalid promotional codes with th
 After running tests, you can view the HTML report:
 ```powershell
 npx playwright show-report
+Note: After running the tests, execute npx playwright test --reporter=html to generate the report.
 ```

@@ -194,7 +194,7 @@ test.describe('MarsAir Flight Booking', () => {
   });
 
   test.describe('Story #4: Invalid Return Dates', () => {
-    test('TC013: Return date less than 1 year - application behavior', async ({ page }) => {
+    test('TC008: Return date less than 1 year - application behavior', async ({ page }) => {
       const marsAir = new MarsAirPage(page);
       await marsAir.search('December', 'July');
       const message = await marsAir.getSearchResultMessage();
@@ -203,7 +203,7 @@ test.describe('MarsAir Flight Booking', () => {
       expect(message).toMatch(/Unfortunately, this schedule is not possible|Sorry, there are no more seats available\./);
     });
 
-    test('TC014: Return date exactly 1 year', async ({ page }) => {
+    test('TC009: Return date exactly 1 year', async ({ page }) => {
       const marsAir = new MarsAirPage(page);
       await marsAir.search('July', 'July (next year)');
       const message = await marsAir.getSearchResultMessage();
